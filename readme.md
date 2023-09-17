@@ -118,9 +118,25 @@ The remaining data dimensions after data preprocessing is $(259415, 10)$. Now th
 4. Grid search for Hyperparameter tuning
 5. Metrics used for optimization : Mean Squared Error(MSE), Mean Absolute Error(MAE) and Root Mean Squared Error(RMSE)
 ## Results: 
+1. GHG savings prediction
 The following table shows the summary of training for each model.
 ![image](https://github.com/Gangaraj-eng/IT496_DataForce_CourseProject1/assets/77287821/be69216f-e1bd-4d01-8392-fca31bc7d72c)
 Ridge Regression model has the best performance over the training data.
 #### Evaluation
 The performances of each model(with best hyperparameters) on test set are :<br/>
-![image](https://github.com/Gangaraj-eng/IT496_DataForce_CourseProject1/assets/77287821/2e070603-54aa-4c7e-bd1e-7e55a543e1a2) <br/>
+![image](https://github.com/Gangaraj-eng/IT496_DataForce_CourseProject1/assets/77287821/2e070603-54aa-4c7e-bd1e-7e55a543e1a2) <br/><br/>
+2. Charging session Fee Prediction<br/>
+The following table shows the summary of training for each model.
+![image](https://github.com/Gangaraj-eng/IT496_DataForce_CourseProject1/assets/77287821/d3b4274f-6974-4f57-bb02-0c68420d0e0b)
+#### Evalution
+The performances of each model(with best hyperparameters) on test set are :<br/>
+![image](https://github.com/Gangaraj-eng/IT496_DataForce_CourseProject1/assets/77287821/ea9e047f-f58c-4d11-b658-8b4488be4b09)
+
+## Comparision:
+Among the four models, Ridge Regression is giving better performance(lowest MSE and MAE) than Lasso Regression, Elastic Net and SGD.The reasons for this are : 
+1. The given dataset has high degree of feature correlation as can be seen in EDA. Ridge regression can mitigate the problem of multicollinearity and thus it outperforms other models.
+2. The given dataset can be easily overfitten by complex models and as the ridge regression add more penalty to weights, it is able to better prevent overfitting than Lasso and Elastic Net.
+3. Stochastic gradient descent regression has convergence issues and thus can lead to suboptimal solutions and hence it underperforms compared to Ridge Regression.
+
+
+
