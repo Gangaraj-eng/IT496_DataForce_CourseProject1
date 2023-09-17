@@ -45,3 +45,39 @@ A summary of all the columns present in the dataset:
 
 ## **Data Visualizations and insights through EDA**
 
+Box plots for some of numerical columns: 
+![image](https://github.com/Gangaraj-eng/IT496_DataForce_CourseProject1/assets/77287821/baa77f70-e50c-491d-822c-53b3efecd713) <br/>
+The box plots show that the columns Energy, GHG Savings, Gasoline savings and Fee are all right(positive)-skewed datasets
+
+Plots of GHG Savings vs Energy and Gasoline Savings vs Energy: 
+![image](https://github.com/Gangaraj-eng/IT496_DataForce_CourseProject1/assets/77287821/b005b386-5ce1-4d23-ac79-7051901c3756) <br/>
+The above graphs suggest that there is a strong correlation of Energy and GHG Savings 
+<br/>
+<br/>
+Plot of Energy VS Fee:
+<br/>
+![image](https://github.com/Gangaraj-eng/IT496_DataForce_CourseProject1/assets/77287821/338dae55-9b5a-444c-b9ee-f8bfb3171a27)
+
+Heat Map plot for correlation:<br/>
+![image](https://github.com/Gangaraj-eng/IT496_DataForce_CourseProject1/assets/77287821/e361c6dd-e64d-4501-8d58-f76c37b44b98) <br/>
+The above plot shows a perfect correlation among Energy, GHG Savings and Gasoline Savings.
+Plot of Number of charging sessions recorded in each station: <br/>
+![image](https://github.com/Gangaraj-eng/IT496_DataForce_CourseProject1/assets/77287821/796a42e7-df88-49ad-a8a6-fda03e8ae5dc)
+The maximum number of charging sessions are recorded in the station 'PALO ALTO CA / HAMILTON #2'
+
+Pie chart of percentage distributions for port Types and plug Types:<br/>
+![image](https://github.com/Gangaraj-eng/IT496_DataForce_CourseProject1/assets/77287821/aceec8f1-88a1-4151-8a2b-439cd34f0bc8) <br/>
+Most of charging sessiosn use Level 2 Port Type and $J1772$ Plug Type.
+
+Distribution of different types of currency usage in Transactions:<br/>
+![image](https://github.com/Gangaraj-eng/IT496_DataForce_CourseProject1/assets/77287821/936ba2c6-a0b8-4f3d-91a7-db37e715c50a) <br/>
+Due to larger difference of $USD$ and other currencies, the above plot is plotted using logarithmic scale!!!. 
+
+Distribution of charging sessions in two different counties(terrestrial divisions):<br/>
+![image](https://github.com/Gangaraj-eng/IT496_DataForce_CourseProject1/assets/77287821/00831e04-de3f-465a-8bec-de10bd7bef72) <br/>
+Out of the two counties, majority of the charging sessions were recorded in Santa Clara County!!.
+
+Histogram plot of charging time:<br/>
+![image](https://github.com/Gangaraj-eng/IT496_DataForce_CourseProject1/assets/77287821/b2dcab1e-9bb6-4508-b1b1-e4024d63f981) <br/> 
+From the above plot, most charging sessions take around 50minutes to 150 minutes for charging.
+
