@@ -133,7 +133,18 @@ A summary of all the columns present in the dataset:<br/>
 The following classification problems can be analysed for the following dataset:
 1. **Application layer protocol identification**: Based on the network flow details, the task is to classify which application layer protocol, the given flow used, based on attributes like number of forward and backward packets, flags used, forward and backward segments and so on.
 2. **Transport layer protocol identification**: Similarly we can classify the transport layer protcol number used in the flow as TCP(6) or UDP(17) by analysing the numerical information about forward and backward packets, flags used, and so on.<br/>
+3. **Flow label classification**: Classifying the label of an IP flow as Benign or Malign.
+    Among these, problem 1 - Application layer protocol identification seems most interesting as there are more number of classes compared to other problems and the distribution of dataset is more balanced compared to Transport layer protocol(where 90% of data belongs to one of the classes). For Flow label problem, all the instances are of benign class and there are no instance available for malign class. Thus, application layer protocol identification seems most interesting as it has sufficient classes with a balanced data distribution among these classes.
 
-    Among these, problem 1 - Application layer protocol identification seems most interesting as there are more number of classes compared to other problems and the distribution of dataset is more balanced compared to Transport layer protocol(where 90% of data belongs to one of the classes). This is not the case for application layer protocol and more better classification analysis is possible.
+### Task 3
+#### Data Preprocessing steps:
+1. Removing the id columns: 'Flow.ID','Source.IP','Source.Port','Destination.IP','Destination.Port' as these are just some identifiers which are independent of the protocol used.
+2. Removing single valued columns: Removing columns that have a single value for all instances as these can't be used for any analysis
+3. Encoding for nominal attributes: Label  encoding for nominal attributs like ProtocolName to make it into numeric
+4. Dimensionality Reduction: Reducing a few columns without causing too much loss. As there are many columns in the dataset, performing dimensionality reduction can be used in the following way - If more than on columns have same correlation with ProtocolName, then one of these columns is enough to capture relations of all these columns with ProtocolName. Thus, first we find sets of columns with same correlation with target column and randomly select one column among them.
+5. Scaling and Normalization
 
+#### Model Building and Evaluation:
+
+#### Comparision of Different Models:
 
