@@ -98,3 +98,42 @@ A summary of all the columns present in the dataset:<br/>
 | 85 | Label| The state of the flow (benign or malign). | Nominal  | 1|
 | 86 | L7Protocol| This attribute represents the code number of the layer 7 protocol as obtained from nDPI in Ntopng application. | Nominal  | 78|
 | 87 | ProtocolName| This attribute is the objective class of the dataset. | Nominal  | 78|
+
+
+###  Task 1
+#### EDA Findings and Visualizations
+**Data visualiations**:
+![HeatMapNumericColumns](https://github.com/Gangaraj-eng/IT496_DataForce_CourseProject1/assets/77287821/ec5bea08-d486-4cec-81ec-f3556152a3ae)
+
+![scatterPlotNumericColumns](https://github.com/Gangaraj-eng/IT496_DataForce_CourseProject1/assets/77287821/4a6d03a8-f121-463f-8712-0140dbdc6b0a)
+
+![ProtcolDistribution](https://github.com/Gangaraj-eng/IT496_DataForce_CourseProject1/assets/77287821/93a6f08e-04aa-419a-a987-d976256a790f)
+
+![DatewiseDistribution](https://github.com/Gangaraj-eng/IT496_DataForce_CourseProject1/assets/77287821/eb9f6dd9-24fb-43e9-be6d-99cf76642e19)
+
+![download](https://github.com/Gangaraj-eng/IT496_DataForce_CourseProject1/assets/77287821/9e0b7524-47c4-4e98-a728-f2bb95710a85)
+![image](https://github.com/Gangaraj-eng/IT496_DataForce_CourseProject1/assets/77287821/bc45390b-63fb-472c-abe9-64943a6e179c)
+
+![SourceIPCoounts](https://github.com/Gangaraj-eng/IT496_DataForce_CourseProject1/assets/77287821/5a3df0c7-70b6-4821-ad4c-35a7d0a8e5fa)
+
+![DestIpCounts](https://github.com/Gangaraj-eng/IT496_DataForce_CourseProject1/assets/77287821/61716965-efd1-4d03-a695-b882ca90565e)
+
+**Findings From  EDA**:
+1. Most of the attributes are of numeric type, except a few nominal attributes like ProtocolName, Label, Source and destination IP addresses, and timestamp.
+2. There are no such null or missing values in the given dataset as it is collected through software
+3. Most of the columns have a right-skewed distribution
+4. Most of the ip flows are using Google Protocol followed by HTTP and HTTP_Proxy as the layer 7 protocol
+5. Almost 90% of IP flows are using TCP with a few using UDP as Transport Layer protcol
+6. There are few columns having only a single unique value for all instances.
+7. Among the 6 days on which data is recoreded, 27th april has the highest number of flows recoreded
+8. Many sets of columns have a similar correlation among them and thus there is a scope for dimensionality reduction to reduce the columns for computational efficiency
+
+### Task 2
+#### Classification problems
+The following classification problems can be analysed for the following dataset:
+1. **Application layer protocol identification**: Based on the network flow details, the task is to classify which application layer protocol, the given flow used, based on attributes like number of forward and backward packets, flags used, forward and backward segments and so on.
+2. **Transport layer protocol identification**: Similarly we can classify the transport layer protcol number used in the flow as TCP(6) or UDP(17) by analysing the numerical information about forward and backward packets, flags used, and so on.<br/>
+
+    Among these, problem 1 - Application layer protocol identification seems most interesting as there are more number of classes compared to other problems and the distribution of dataset is more balanced compared to Transport layer protocol(where 90% of data belongs to one of the classes). This is not the case for application layer protocol and more better classification analysis is possible.
+
+
