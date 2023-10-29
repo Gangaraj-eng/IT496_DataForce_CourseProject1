@@ -1,8 +1,8 @@
 # <p align='center'>IT496 - Introduction to Data Mining</p>
 **Course Project**: 2 <br/>
 **Lab Group**: T06<br />
-**Dataset**: IP Network Traffic Flows
-
+**Dataset**: IP Network Traffic Flows<br/>
+**Dataset link**: https://www.kaggle.com/datasets/jsrojas/ip-network-traffic-flows-labeled-with-87-apps
 
 ## **Introduction**: 
 The given dataset is about the network flow statistics collected by performing packet captures over 6 days of April 2017. It contains information about an IP flow. An Ip flow consists of all traffic that belongs to the same communication context, that is the same connection between two network devices. Information about a sequence of packets is included. Datafields like Source IP, destination IP, source and destination port addresses, protocols used, interarrival times(time gap between two packets), etc are stored and are collected through CICIFlowmeter app.
