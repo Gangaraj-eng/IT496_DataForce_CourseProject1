@@ -145,6 +145,21 @@ The following classification problems can be analysed for the following dataset:
 5. Scaling and Normalization
 
 #### Model Building and Evaluation:
+The following four classification models are used for the analysis:
+1. Logistic Regression
+2. Linear SVM
+3. Decision Tree
+4. Random Forest
+   <br/>
+        Using GridSearchCV for hyperparameter tuning and finding the best classifier in each model,the best hyperparameters along with the performance on train set are as follows:<br/>
+        ![image](https://github.com/Gangaraj-eng/IT496_DataForce_CourseProject1/assets/77287821/2fde24aa-c4b3-4628-8fe0-ff1b24a4c01d)
+<br/>
+   
+   ![image](https://github.com/Gangaraj-eng/IT496_DataForce_CourseProject1/assets/77287821/35f04ef6-8540-4220-bd7c-5d59e5da70aa)
 
 #### Comparision of Different Models:
-
+1. Decision tree and random forest classifiers have good performance even on the test data
+2. Logistic regression has average performance but linear svm performs very poorly on the train as well as test data
+3. Due to the computation complexity caused by large number of instances and features, linear svm performs poorly on the given dataset
+4. As random forest uses an ensemble of decision trees with additional randomness and feature selection, there is a less chance of overfitting and thus random forest is able to perform better than decision trees
+5. Poor performance of logistic regression and linear svm suggests the non-linearity and complex relationships which are captured by decision trees and random forest
