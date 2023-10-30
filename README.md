@@ -171,6 +171,6 @@ The following four classification models are used for the analysis:
 | Rohan Reddy Patlolla | 202001076 | Attribute summary: 52-68 <br/> Exploratory data analysis <br/> Train test splitting and model defining |
 | Nipun Shah | 202001096 | Attribute summary: 35-51 <br/> Data Preprocessing <br/> Documentation |
 | Gangaraju Bopparam | 202001107 | Attribute summary: 1-17 <br/> Training, Hyperparameter tuning <br/> and Evaluation |
-| Rishit Shah | 202001142 | Attribute summary: 68-87 <br/> Exploratory Data Analysis <br/> Documentation |
+| Rishit Shah | 202001411 | Attribute summary: 68-87 <br/> Exploratory Data Analysis <br/> Documentation |
 
 
